@@ -6,7 +6,7 @@ pub fn effective_area(a_sr: f64, a_ir: f64, a_io: f64) -> f64 {
 pub fn effective_area_equation(a_sr: String, a_ir: String, a_io: String) -> String {
     format!(
         "{} = \\left(\\dfrac{{1}}{{{}}}^2 + \\dfrac{{1}}{{{}}}^2 + \\dfrac{{1}}{{{}}}^2\\right)^{{-0.5}}",
-        "A_{effective}", a_sr, a_ir, a_io
+        "A_{e}", a_sr, a_ir, a_io
     )
 }
 
