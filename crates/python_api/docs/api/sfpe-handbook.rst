@@ -138,3 +138,67 @@ Equation 50.20 - Visibility Through Smoke (Percent Obscuration)
    :members:
    :undoc-members:
    :show-inheritance:
+
+Chapter 59
+----------
+
+.. automodule:: ofire.sfpe_handbook.chapter_59
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.5
+~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_5
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.6
+~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_6
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.7
+~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_7
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.8
+~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_8
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.9
+~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_9
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.10
+~~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_10
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.11
+~~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_11
+   :members:
+   :undoc-members:
+   :show-inheritance:

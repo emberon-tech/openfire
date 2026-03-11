@@ -3,7 +3,12 @@ pub fn stairwell_temperature(t_0: f64, eta: f64, t_b: f64) -> f64 {
 }
 
 #[cfg(not(coverage))]
-pub fn stairwell_temperature_equation(t_s: String, t_0: String, eta: String, t_b: String) -> String {
+pub fn stairwell_temperature_equation(
+    t_s: String,
+    t_0: String,
+    eta: String,
+    t_b: String,
+) -> String {
     format!("{} = {} + {} \\times ( {} - {} )", t_s, t_0, eta, t_b, t_0)
 }
 

@@ -1,5 +1,6 @@
 pub mod chapter_14;
 pub mod chapter_50;
+pub mod chapter_59;
 
 use pyo3::prelude::*;
 use pyo3::wrap_pymodule;
@@ -14,5 +15,6 @@ use pyo3::wrap_pymodule;
 pub fn sfpe_handbook(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_wrapped(wrap_pymodule!(chapter_14::chapter_14))?;
     m.add_wrapped(wrap_pymodule!(chapter_50::chapter_50))?;
+    m.add_wrapped(wrap_pymodule!(chapter_59::chapter_59))?;
     Ok(())
 }
