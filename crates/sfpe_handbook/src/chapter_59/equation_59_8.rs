@@ -31,5 +31,4 @@ mod tests {
         let result = calculated_flow(1.3, 1.5);
         assert!((result - 1.95).abs() < 1e-6);
     }
-
 }

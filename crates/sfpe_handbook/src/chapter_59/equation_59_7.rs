@@ -18,7 +18,10 @@ pub fn specific_flow(a: f64, d: f64, k: f64) -> f64 {
 
 #[cfg(not(coverage))]
 pub fn specific_flow_equation(fs: String, a: String, d: String, k: String) -> String {
-    format!("{} = (1 - {} \\cdot {}) \\cdot {} \\cdot {}", fs, a, d, k, d)
+    format!(
+        "{} = (1 - {} \\cdot {}) \\cdot {} \\cdot {}",
+        fs, a, d, k, d
+    )
 }
 
 #[cfg(test)]
@@ -30,5 +33,4 @@ mod tests {
         let result = specific_flow(0.266, 0.5, 1.4);
         assert!((result - 0.6069).abs() < 1e-6);
     }
-
 }

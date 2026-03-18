@@ -1,13 +1,23 @@
-/// Placeholder for equation 59.10 calculation.
+/// Calculates the time for passage (Equation 59.10).
 ///
-/// TODO: Implement the actual equation logic.
-pub fn equation_59_10_placeholder() -> f64 {
-    todo!("Implement equation 59.10")
+/// The time for passage is the time for a group of persons to pass a point
+/// in an exit route.
+///
+/// # Arguments
+///
+/// * `p` - Population size (persons)
+/// * `fc` - Calculated flow (persons/min or persons/s)
+///
+/// # Returns
+///
+/// Time for passage tp (minutes when Fc is in persons/min; seconds when Fc is in persons/s)
+pub fn time_for_passage(p: f64, fc: f64) -> f64 {
+    p / fc
 }
 
 #[cfg(not(coverage))]
-pub fn equation_59_10_equation() -> &'static str {
-    "TODO: Add equation string"
+pub fn time_for_passage_equation(tp: String, p: String, fc: String) -> String {
+    format!("{} = \\frac{{{}}}{{{}}}", tp, p, fc)
 }
 
 #[cfg(test)]
@@ -15,8 +25,8 @@ mod tests {
     use super::*;
 
     #[test]
-    #[ignore = "placeholder - implement when equation is added"]
-    fn test_equation_59_10() {
-        // TODO: Add test when equation is implemented
+    fn test_time_for_passage() {
+        let result = time_for_passage(100.0, 1.0);
+        assert!((result - 100.0).abs() < 1e-6);
     }
 }
