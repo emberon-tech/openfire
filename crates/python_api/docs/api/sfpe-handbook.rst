@@ -147,58 +147,74 @@ Chapter 59
    :undoc-members:
    :show-inheritance:
 
-Equation 59.5
-~~~~~~~~~~~~~
+Equation 59.5 - Pedestrian Travel Speed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_5
    :members:
    :undoc-members:
    :show-inheritance:
 
-Equation 59.6
-~~~~~~~~~~~~~
+Equation 59.6 - Specific Flow of Evacuating Persons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_6
    :members:
    :undoc-members:
    :show-inheritance:
 
-Equation 59.7
-~~~~~~~~~~~~~
+Equation 59.7 - Combined Specific Flow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_7
    :members:
    :undoc-members:
    :show-inheritance:
 
-Equation 59.8
-~~~~~~~~~~~~~
+Equation 59.8 - Flow Rate of Persons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_8
    :members:
    :undoc-members:
    :show-inheritance:
 
-Equation 59.9
-~~~~~~~~~~~~~
+Equation 59.9 - Combined Flow Rate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_9
    :members:
    :undoc-members:
    :show-inheritance:
 
-Equation 59.10
-~~~~~~~~~~~~~~
+Equation 59.10 - Time for Passage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_10
    :members:
    :undoc-members:
    :show-inheritance:
 
-Equation 59.11
-~~~~~~~~~~~~~~
+Equation 59.11 - Combined Time for Passage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_11
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.12 - Specific Flow at Transition Point
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_12
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.13 - Specific Flow with Two Incoming Flows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_13
    :members:
    :undoc-members:
    :show-inheritance:
