@@ -3,6 +3,7 @@ pub mod equation_59_11;
 pub mod equation_59_12;
 pub mod equation_59_13;
 pub mod equation_59_15;
+pub mod equation_59_16;
 pub mod equation_59_5;
 pub mod equation_59_6;
 pub mod equation_59_7;

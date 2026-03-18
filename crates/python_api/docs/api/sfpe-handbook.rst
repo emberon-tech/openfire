@@ -218,3 +218,19 @@ Equation 59.13 - Specific Flow with Two Incoming Flows
    :members:
    :undoc-members:
    :show-inheritance:
+
+Equation 59.15 - Evacuation Time (Congestion Dominated)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_15
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Equation 59.16 - Evacuation Time (No Congestion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: ofire.sfpe_handbook.chapter_59.equation_59_16
+   :members:
+   :undoc-members:
+   :show-inheritance:

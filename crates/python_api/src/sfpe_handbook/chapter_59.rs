@@ -3,6 +3,7 @@ pub mod equation_59_11;
 pub mod equation_59_12;
 pub mod equation_59_13;
 pub mod equation_59_15;
+pub mod equation_59_16;
 pub mod equation_59_5;
 pub mod equation_59_6;
 pub mod equation_59_7;
@@ -24,5 +25,6 @@ pub fn chapter_59(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_wrapped(wrap_pymodule!(equation_59_12::equation_59_12))?;
     m.add_wrapped(wrap_pymodule!(equation_59_13::equation_59_13))?;
     m.add_wrapped(wrap_pymodule!(equation_59_15::equation_59_15))?;
+    m.add_wrapped(wrap_pymodule!(equation_59_16::equation_59_16))?;
     Ok(())
 }
