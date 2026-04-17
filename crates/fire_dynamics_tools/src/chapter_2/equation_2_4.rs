@@ -11,7 +11,7 @@ pub fn thermal_penetration_time_equation(
     delta: String,
 ) -> String {
     format!(
-        "{} = \\frac{{{} \\cdot {}}}{{{}}} \\cdot \\left( \\frac{{{}}}{2} \\right)^2}}",
+        "{} = \\frac{{{} \\cdot {}}}{{{}}} \\cdot \\left( \\frac{{{}}}{{2}} \\right)^{{2}}",
         t_p, c_p, rho, k, delta
     )
 }

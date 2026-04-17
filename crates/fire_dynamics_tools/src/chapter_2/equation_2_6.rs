@@ -27,7 +27,7 @@ pub fn hot_gas_temperature_increase_equation(
     q: String,
 ) -> String {
     format!(
-        "{} = \\frac{{2 \\cdot \\frac{{{}}}{{{}\\cdot{}}}}}{{\\left(\\frac{{2 \\cdot 0.4 \\cdot \\sqrt{{{}\\cdot{}\\cdot{}}}}}{{{}\\cdot{}}}\\right)^2}} \\cdot \\left(\\frac{{2 \\cdot 0.4 \\cdot \\sqrt{{{}\\cdot{}\\cdot{}}}}}{{{}\\cdot{}}} \\cdot \\sqrt{{{}}} - 1 + e^{{-\\frac{{2 \\cdot 0.4 \\cdot \\sqrt{{{}\\cdot{}\\cdot{}}}}}{{{}\\cdot{}}} \\cdot \\sqrt{{{}}}}}\\right)",
+        "{} = \\frac{{2 \\cdot \\frac{{{}}}{{{}  \\cdot  {}}}}}{{\\left(\\frac{{2 \\cdot 0.4 \\cdot \\sqrt{{{} \\cdot {} \\cdot {}}}}}{{{}  \\cdot  {}}}\\right)^2}} \\cdot \\left(\\frac{{2 \\cdot 0.4 \\cdot \\sqrt{{{} \\cdot {} \\cdot {}}}}}{{{}  \\cdot  {}}} \\cdot \\sqrt{{{}}} - 1 + e^{{-\\frac{{2 \\cdot 0.4 \\cdot \\sqrt{{{} \\cdot {} \\cdot {}}}}}{{{}  \\cdot  {}}} \\cdot \\sqrt{{{}}}}}\\right)",
         delta_t_g, q, m, c_p, k, rho, c, m, c_p, k, rho, c, m, c_p, t, k, rho, c, m, c_p, t
     )
 }
