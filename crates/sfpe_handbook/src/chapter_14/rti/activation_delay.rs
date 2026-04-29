@@ -30,6 +30,20 @@ pub fn total_activation_delay(
     t_transport + t_thermal
 }
 
+#[cfg(not(coverage))]
+pub fn transport_time_equation(t: String, radial_position: String, u: String) -> String {
+    format!("{} = \\dfrac{{{}}}{{{}}}", t, radial_position, u)
+}
+
+#[cfg(not(coverage))]
+pub fn total_activation_delay_equation(
+    t_total: String,
+    t_transport: String,
+    t_thermal: String,
+) -> String {
+    format!("{} = {} + {}", t_total, t_transport, t_thermal)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

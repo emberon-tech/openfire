@@ -2,6 +2,21 @@ pub fn cooling_power(m_dot: f64, c_p_w: f64, t_boil: f64, t_w: f64, h_fg: f64) -
     m_dot * (c_p_w * (t_boil - t_w) + h_fg)
 }
 
+#[cfg(not(coverage))]
+pub fn cooling_power_equation(
+    q: String,
+    m_dot: String,
+    c_p_w: String,
+    t_boil: String,
+    t_w: String,
+    h_fg: String,
+) -> String {
+    format!(
+        "{} = {} \\cdot \\left({} \\cdot ({} - {}) + {}\\right)",
+        q, m_dot, c_p_w, t_boil, t_w, h_fg
+    )
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

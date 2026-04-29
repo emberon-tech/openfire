@@ -11,6 +11,11 @@ pub fn coverage_area(spacing: f64, branchline_distance: f64) -> f64 {
     spacing * branchline_distance
 }
 
+#[cfg(not(coverage))]
+pub fn coverage_area_equation(a: String, spacing: String, branchline_distance: String) -> String {
+    format!("{} = {} \\cdot {}", a, spacing, branchline_distance)
+}
+
 pub fn max_coverage_area(hazard: HazardClass) -> f64 {
     match hazard {
         HazardClass::LightHazard => 20.9,

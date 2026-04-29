@@ -6,6 +6,23 @@ pub fn velocity(q: f64, height: f64, radial_position: f64) -> f64 {
     }
 }
 
+#[cfg(not(coverage))]
+pub fn velocity_equation(
+    u: String,
+    q: String,
+    height: String,
+    radial_position: String,
+) -> String {
+    format!(
+        "{} = \\begin{{cases}} 0.96 \\cdot \\left(\\dfrac{{{}}}{{{}}}\\right)^{{1/3}} & \\text{{if }} \\dfrac{{{}}}{{{}}} \\leq 0.15 \\\\[6pt] 0.195 \\cdot \\dfrac{{{}^{{1/3}} \\cdot {}^{{1/2}}}}{{{}^{{5/6}}}} & \\text{{if }} \\dfrac{{{}}}{{{}}} > 0.15 \\end{{cases}}",
+        u,
+        q, height,
+        radial_position, height,
+        q, height, radial_position,
+        radial_position, height
+    )
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

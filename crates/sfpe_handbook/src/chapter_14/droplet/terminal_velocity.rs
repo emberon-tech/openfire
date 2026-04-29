@@ -6,6 +6,20 @@ pub fn terminal_velocity(diameter: f64, drag_coefficient: f64, rho_w: f64, rho_a
     (numerator / denominator).sqrt()
 }
 
+#[cfg(not(coverage))]
+pub fn terminal_velocity_equation(
+    u_t: String,
+    diameter: String,
+    drag_coefficient: String,
+    rho_w: String,
+    rho_a: String,
+) -> String {
+    format!(
+        "{} = \\sqrt{{\\dfrac{{4 \\cdot g \\cdot {} \\cdot ({} - {})}}{{3 \\cdot {} \\cdot {}}}}}",
+        u_t, diameter, rho_w, rho_a, drag_coefficient, rho_a
+    )
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

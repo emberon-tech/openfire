@@ -5,6 +5,21 @@ pub fn activation_time(rti: f64, u: f64, t_g: f64, t_a: f64, t_act: f64) -> f64 
     (rti / u.sqrt()) * ((t_g - t_a) / (t_g - t_act)).ln()
 }
 
+#[cfg(not(coverage))]
+pub fn activation_time_equation(
+    t: String,
+    rti: String,
+    u: String,
+    t_g: String,
+    t_a: String,
+    t_act: String,
+) -> String {
+    format!(
+        "{} = \\dfrac{{{}}}{{\\sqrt{{{}}}}} \\cdot \\ln\\left(\\dfrac{{{} - {}}}{{{} - {}}}\\right)",
+        t, rti, u, t_g, t_a, t_g, t_act
+    )
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

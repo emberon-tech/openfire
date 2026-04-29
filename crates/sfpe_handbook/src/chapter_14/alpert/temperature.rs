@@ -6,6 +6,23 @@ pub fn temperature_rise(q: f64, height: f64, radial_position: f64) -> f64 {
     }
 }
 
+#[cfg(not(coverage))]
+pub fn temperature_rise_equation(
+    delta_t: String,
+    q: String,
+    height: String,
+    radial_position: String,
+) -> String {
+    format!(
+        "{} = \\begin{{cases}} 16.9 \\cdot \\dfrac{{{}^{{2/3}}}}{{{}^{{5/3}}}} & \\text{{if }} \\dfrac{{{}}}{{{}}} \\leq 0.18 \\\\[6pt] 5.38 \\cdot \\dfrac{{({} / {})^{{2/3}}}}{{{}}} & \\text{{if }} \\dfrac{{{}}}{{{}}} > 0.18 \\end{{cases}}",
+        delta_t,
+        q, height,
+        radial_position, height,
+        q, radial_position, height,
+        radial_position, height
+    )
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -10,6 +10,21 @@ pub fn k_factor(flow_rate: f64, pressure: f64) -> f64 {
     flow_rate / pressure.sqrt()
 }
 
+#[cfg(not(coverage))]
+pub fn flow_rate_equation(q: String, k: String, p: String) -> String {
+    format!("{} = {} \\cdot \\sqrt{{{}}}", q, k, p)
+}
+
+#[cfg(not(coverage))]
+pub fn pressure_equation(p: String, q: String, k: String) -> String {
+    format!("{} = \\left(\\dfrac{{{}}}{{{}}}\\right)^{{2}}", p, q, k)
+}
+
+#[cfg(not(coverage))]
+pub fn k_factor_equation(k: String, q: String, p: String) -> String {
+    format!("{} = \\dfrac{{{}}}{{\\sqrt{{{}}}}}", k, q, p)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
