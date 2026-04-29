@@ -165,6 +165,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "nfpa_13"
+version = "0.1.0"
+
+[[package]]
 name = "once_cell"
 version = "1.21.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -182,6 +186,7 @@ dependencies = [
  "hex-literal",
  "introduction_to_fire_dynamics",
  "lazy_static",
+ "nfpa_13",
  "pd_7974",
  "serde",
  "serde_json",
